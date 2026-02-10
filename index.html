@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Shop Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🏪 Digital Shop Management System</h1>
+
+    <!-- Sales Section -->
+    <div class="card">
+      <h2>📈 Add Daily Sale</h2>
+      <input type="number" id="saleAmount" placeholder="Sale Amount (₹)">
+      <button onclick="addSale()">Add Sale</button>
+    </div>
+
+    <!-- Expense Section -->
+    <div class="card">
+      <h2>💸 Add Expense</h2>
+      <input type="text" id="expenseTitle" placeholder="Expense Title">
+      <input type="number" id="expenseAmount" placeholder="Expense Amount (₹)">
+      <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <!-- Summary -->
+    <div class="card summary">
+      <h2>📊 Summary</h2>
+      <p>Total Sales: ₹ <span id="totalSales">0</span></p>
+      <p>Total Expenses: ₹ <span id="totalExpenses">0</span></p>
+      <h3>Net Profit: ₹ <span id="netProfit">0</span></h3>
+    </div>
+
+    <!-- History -->
+    <div class="card">
+      <h2>🧾 History</h2>
+      <ul id="historyList"></ul>
+    </div>
+
+    
+
+    <!-- Actions -->
+    <div class="actions">
+      <button class="reset" onclick="resetData()">Reset Data</button>
+      <button class="backup" onclick="backupData()">Backup Data</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
